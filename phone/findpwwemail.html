@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폰케몰 9번: 이메일로 찾기</title>
+<style>
+    body {
+        background: #64104f;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+    header {
+        background: #333;
+        padding: 10px 20px;
+    }
+    header a {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .container {
+        background: white;
+        max-width: 450px;
+        margin: 60px auto;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .email-row {
+        display: flex;
+        gap: 10px;
+    }
+    .email-row input {
+        flex: 1;
+    }
+    .email-row button {
+        padding: 10px 16px;
+        background: #4e3c9d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .email-row button:hover {
+        background: #128d70;
+    }
+    .btn-row {
+        display: flex;
+        margin-top: 16px;
+        justify-content: center;
+        gap: 40px;
+    }
+    .btn-row a button {
+        flex: 1;
+        padding: 10px;
+        background: #d184e3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-row a button:hover {
+        background: #555;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <a href="main.html">폰케몰</a>
+    </header>
+    <div class="container">
+        <h2>이메일로 찾기</h2>
+
+        <input type="text" placeholder="이름 입력">
+
+        <div class="email-row">
+            <input type="email" placeholder="이메일 입력">
+            <button>인증번호 받기</button>
+        </div>
+
+        <input type="text" placeholder="인증번호 입력">
+
+        <div class="btn-row">
+            <a href="findpwsuccess.html"><button>비밀번호 찾기</button></a>
+            <a href="findidsuccess.html"><button>아이디 찾기</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

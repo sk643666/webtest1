@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폰케몰 3번: 장바구니</title>
+<style>
+    body {
+        background: #000;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo a {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    header .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        margin-left: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        color: white;
+    }
+
+    .cart-container {
+        background: white;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .cart-header {
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .checkout-btn {
+        padding: 8px 16px;
+        background: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+        background: #555;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .product {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        background: white;
+    }
+
+    .product input[type="checkbox"] {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .product-title a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .product-title a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="main.html">폰케몰</a></div>
+        <div class="nav-links">
+            <a href="login.html">로그인</a>
+            <a href="mypage.html">마이페이지</a>
+        </div>
+    </header>
+
+    <h1>장바구니</h1>
+
+    <div class="cart-container">
+
+        <div class="cart-header">
+            <a href="payment.html"><button class="checkout-btn">상품 결제</button></a>
+        </div>
+
+        <div class="product-list">
+
+            <div class="product">
+                <input type="checkbox">
+                <a href="productdetails.html">
+                    <img src="img/pro1.jpg">
+                    <div class="product-title">상품 1</div>
+                </a>
+            </div>
+
+            <div class="product">
+                <input type="checkbox">
+                <a>
+                    <img src="img/pro2.jpg">
+                    <div class="product-title">상품 2</div>
+                </a>
+            </div>
+
+            <div class="product">
+                <input type="checkbox">
+                <a>
+                    <img src="img/pro3.jpg">
+                    <div class="product-title">상품 3</div>
+                </a>
+            </div>
+
+            <div class="product">
+                <input type="checkbox">
+                <a>
+                    <img src="img/pro4.jpg">
+                    <div class="product-title">상품 4</div>
+                </a>
+            </div>
+
+            <div class="product">
+                <input type="checkbox">
+                <a>
+                    <img src="img/pro5.jpg">
+                    <div class="product-title">상품 5</div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

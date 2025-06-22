@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폰케몰 1번: 메인(상품 목록)</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .category-bar {
+            background: #f7f7f7;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .category-bar a {
+            background: #ddd;
+            padding: 6px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+        }
+        .products {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-title {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">폰케몰</div>
+        <nav>
+            <a href="login.html">로그인</a>
+            <a href="signup.html">회원가입</a>
+            <a href="orderdelivery.html">주문조회</a>
+            <a href="shoppingcart.html">장바구니</a>
+            <a href="mypage.html">마이페이지</a>
+        </nav>
+    </header>
+    <div class="category-bar">
+        <a>갤럭시S25엣지</a>
+        <a>갤럭시S25플러스</a>
+        <a>갤럭시S25</a>
+        <a>갤럭시S24FE</a>
+        <a>갤럭시S24플러스</a>
+        <a>갤럭시S24</a>
+        <a>갤럭시S23FE</a>
+        <a>갤럭시S23플러스</a>
+        <a>갤럭시S23</a>
+        <a>갤럭시노트20울트라</a>
+        <a>갤럭시노트20</a>
+        <a>갤럭시노트10+</a>
+        <a>갤럭시노트10</a>
+        <a>갤럭시플립6</a>
+        <a>갤럭시플립5</a>
+        <a>갤럭시폴드6</a>
+        <a>갤럭시폴드5</a>
+        <a>아이폰16</a>
+        <a>아이폰15</a>
+        <a>아이폰14</a>
+    </div>
+    <div class="products">
+        <div class="product">
+            <a href="productdetails.html">
+                <img src="img/pro1.jpg">
+                <div class="product-title">상품 1</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro2.jpg">
+                <div class="product-title">상품 2</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro3.jpg">
+                <div class="product-title">상품 3</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro4.jpg">
+                <div class="product-title">상품 4</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro5.jpg">
+                <div class="product-title">상품 5</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro6.jpg">
+                <div class="product-title">상품 6</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro7.jpg">
+                <div class="product-title">상품 7</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro8.jpg">
+                <div class="product-title">상품 8</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro9.jpg">
+                <div class="product-title">상품 9</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro10.jpg">
+                <div class="product-title">상품 10</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro11.jpg">
+                <div class="product-title">상품 11</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro12.jpg">
+                <div class="product-title">상품 12</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro13.jpg">
+                <div class="product-title">상품 13</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro14.jpg">
+                <div class="product-title">상품 14</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro15.jpg">
+                <div class="product-title">상품 15</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro16.jpg">
+                <div class="product-title">상품 16</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro17.jpg">
+                <div class="product-title">상품 17</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro18.jpg">
+                <div class="product-title">상품 18</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro19.jpg">
+                <div class="product-title">상품 19</div>
+            </a>
+        </div>
+        <div class="product">
+            <a>
+                <img src="img/pro20.jpg">
+                <div class="product-title">상품 20</div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

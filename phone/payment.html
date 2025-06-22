@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폰케몰 13번: 상품 결제</title>
+<style>
+    body {
+        background: #f7f7f7;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #333;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    header a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    header h2 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 20px;
+    }
+    .main-container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+    .block {
+        background: white;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    .block h3 {
+        margin-top: 0;
+    }
+    .order-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .order-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+    }
+    .order-item div {
+            text-align: right;
+             width: 100%;
+    }
+    .payment-options label {
+        display: block;
+        margin: 8px 0;
+    }
+    .checkout-btn {
+        padding: 12px;
+        background: #333;
+        color: white;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .checkout-btn:hover {
+        background: #555;
+    }
+    .price {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: right;
+        width: 100%;
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <a href="main.html">폰케몰</a>
+        <h2>상품 결제</h2>
+    </header>
+
+    <div class="main-container">
+        <div class="grid">
+
+            <div class="block">
+                <h3>배송지</h3>
+                <p>이름: 홍길동</p>
+                <p>휴대폰 번호: 010-1234-5678</p>
+                <p>주소: 서울특별시 강남구 강남동 1번지</p>
+            </div>
+
+            <div class="block">
+                <h3>주문 상품</h3>
+                <div class="order-item">
+                    <img src="img/pro10.jpg">
+                    <div>
+                        <p>상품 10 / 휴대폰 케이스</p>
+                        <p>가격: 33,123원</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <h3>결제 수단</h3>
+                <div class="payment-options">
+                    <label><input type="checkbox"> 머니 결제</label>
+                    <label><input type="checkbox"> 계좌 결제</label>
+                    <label><input type="checkbox"> 카드 결제</label>
+                    <label><input type="checkbox"> 일반 결제</label>
+                </div>
+            </div>
+
+            <div class="block">
+                <h3>결제 상세</h3>
+                <div class="price">총 구매 금액: 33,123원</div>
+                <a href="paymentsuccess.html"><button class="checkout-btn">결제하기</button></a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

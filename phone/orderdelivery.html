@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폰케몰 14번: 주문/배송 조회</title>
+<style>
+    body {
+        background: #00fbff;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #333;
+        padding: 10px 20px;
+    }
+    header a {
+        color: rgb(255, 234, 0);
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        color: #7700ff
+    }
+    .order-list {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .order-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #ccc;
+        transition: background 0.2s;
+    }
+    .order-item:hover {
+        background: #eee;
+    }
+    .order-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        margin-right: 16px;
+    }
+    .order-info p {
+        margin: 0;
+    }
+    .order-info p.name {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <a href="main.html">폰케몰</a>
+    </header>
+
+    <h1>주문/배송 조회</h1>
+
+    <div class="order-list">
+
+        <a href="orderdeliverydetails.html" class="order-item">
+            <img src="img/pro1.jpg">
+            <div class="order-info">
+                <p class="name">상품 1</p>
+                <p>구매 가격: 12,345원</p>
+            </div>
+        </a>
+
+        <a class="order-item">
+            <img src="img/pro2.jpg">
+            <div class="order-info">
+                <p class="name">상품 2</p>
+                <p>구매 가격: 19,500원</p>
+            </div>
+        </a>
+
+        <a class="order-item">
+            <img src="img/pro3.jpg">
+            <div class="order-info">
+                <p class="name">상품 3</p>
+                <p>구매 가격: 23,543원</p>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>

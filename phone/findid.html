@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폰케몰 6번: 아이디 찾기</title>
+<style>
+    body {
+        background: #a0a86e;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background: rgb(255, 165, 62);
+        max-width: 400px;
+        margin: 100px auto;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    h1 {
+        color: rgb(74, 33, 33);
+        margin-bottom: 20px;
+    }
+    p {
+        margin: 10px 0;
+        color: rgb(72, 0, 255);
+        font-weight: bold;
+    }
+    .button-row {
+        margin-top: 10px;
+    }
+    .button-row a button {
+        padding: 8px 12px;
+        margin: 0 5px;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .button-row a button:hover {
+        background: #555;
+    }
+    .find-id-row {
+        margin-top: 20px;
+    }
+    .find-id-row a button {
+        padding: 6px 10px;
+        background: #666;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .find-id-row a button:hover {
+        background: #888;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>폰케몰</h1>
+        <p>아이디를 찾을 방식을 선택해주세요</p>
+
+        <div class="button-row">
+            <a href="findpwwemail.html"><button>이메일로 찾기</button></a>
+            <a href="findpwwpnumber.html"><button>휴대폰 번호로 찾기</button></a>
+        </div>
+
+        <div class="find-id-row">
+            <span>비밀번호만 기억나지 않는다면?</span>
+            <a href="findpw.html"><button>비밀번호 찾기</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

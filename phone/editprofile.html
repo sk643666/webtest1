@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폰케몰 12번: 회원정보 수정</title>
+<style>
+    body {
+        background: #ff8989;
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #9ac4ff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+    }
+    header .logo a {
+        color: rgb(14, 3, 3);
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        color: rgb(154, 62, 156);
+    }
+    .mypage-container {
+        background: white;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .mypage-container div {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .mypage-container div:last-child {
+        border-bottom: none;
+    }
+    .label {
+        font-weight: bold;
+        width: 120px;
+    }
+    input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .submit-btn:hover {
+        background: #555;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="main.html">폰케몰</a></div>
+    </header>
+
+    <h1>회원정보 수정</h1>
+
+    <div class="mypage-container">
+        <div><span class="label">아이디:</span> <input type="text" value="iceice1234"></div>
+        <div><span class="label">비밀번호:</span> <input type="password" value="********"></div>
+        <div><span class="label">이름:</span> <input type="text" value="엄백호"></div>
+        <div><span class="label">휴대폰 번호:</span> <input type="text" value="010-1234-5678"></div>
+        <div><span class="label">이메일 주소:</span> <input type="email" value="WhiteTiger@example.com"></div>
+        <div><span class="label">배송지 주소:</span> <input type="text" value="서울특별시 강남구 강남동 1번지"></div>
+
+        <a href="editprofilesuccess.html"><button class="submit-btn">완료</button></a>
+    </div>
+
+</body>
+</html>
